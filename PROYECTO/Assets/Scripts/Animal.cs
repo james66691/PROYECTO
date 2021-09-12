@@ -7,7 +7,7 @@ public class Animal : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] bool movingRight;
     [SerializeField] GameManager gm;
-    [SerializeField] int PuntosVida;
+    [SerializeField] public int PuntosVida;
     bool conta = true;
     int copia;
     float tiempo = 0;
@@ -15,6 +15,7 @@ public class Animal : MonoBehaviour
     float minX, maxX;
     int contador = 1;
     int copia2;
+
 
 
     // Start is called before the first frame update

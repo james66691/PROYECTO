@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Spaceship player;
     [SerializeField] GameObject pauseUI;
     [SerializeField] GameObject gameOverUI;
+    [SerializeField] Animal anim;
     [SerializeField] int numEnemies;
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P) && gameOver == false)
             PauseGame();
+
     }
 
     public void StartGame()
@@ -48,7 +50,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
         gamePaused = gamePaused ? false : true;
         player.gamePaused = gamePaused;

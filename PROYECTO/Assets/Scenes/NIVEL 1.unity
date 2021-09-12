@@ -3185,6 +3185,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2026250369}
     - target: {fileID: 5082016756244327473, guid: e4085c78170763f418956967130b98d8, type: 3}
+      propertyPath: menupausa
+      value: 
+      objectReference: {fileID: 2026250369}
+    - target: {fileID: 5082016756244327473, guid: e4085c78170763f418956967130b98d8, type: 3}
       propertyPath: numAnimal
       value: 3
       objectReference: {fileID: 0}
