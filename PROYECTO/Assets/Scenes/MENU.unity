@@ -1384,6 +1384,7 @@ MonoBehaviour:
   player: {fileID: 0}
   pauseUI: {fileID: 0}
   gameOverUI: {fileID: 0}
+  anim: {fileID: 0}
   numEnemies: 0
 --- !u!4 &1268918716
 Transform:
@@ -1551,11 +1552,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1268918715}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

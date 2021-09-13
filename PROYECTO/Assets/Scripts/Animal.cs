@@ -37,6 +37,7 @@ public class Animal : MonoBehaviour
         {
             poder();
         }
+
         if (movingRight)
         {
             Vector2 movimiento = new Vector2(speed * Time.deltaTime, 0);
@@ -68,14 +69,15 @@ public class Animal : MonoBehaviour
         if (tiempo <= Time.unscaledTime)
         {            
             Time.timeScale = 1f;
-            PuntosVida = copia;
+            
             if (copia2 == 4)
             {
                 conta = false;
             }
+            PuntosVida = copia;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject objeto = collision.gameObject;
         string etiqueta = objeto.tag;
@@ -87,6 +89,7 @@ public class Animal : MonoBehaviour
             {
                 (GameObject.Find("GameManager").GetComponent<GameManager>()).ReducirNumEnemigos();
                 Destroy(this.gameObject);
+
             }
         }
     }

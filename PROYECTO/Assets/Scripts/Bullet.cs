@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [SerializeField] int damage;
     
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,11 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public int danoo()
+    {
+        return damage;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
